@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.na2na8.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:text="섭씨 온도를 입력하세요"/>
+
+        <EditText
+            android:inputType="number"
+            android:digits="0123456789"
+            android:id="@+id/etCtoF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="온도를 입력하세요"/>
+
+        <Button
+            android:id="@+id/btCtoF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="button1Method"
+            android:text="화씨 계산" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:layout_marginLeft="5dp"
+            android:text="화씨 온도를 입력하세요"/>
+
+        <EditText
+            android:inputType="number"
+            android:digits="0123456789"
+            android:id="@+id/etFtoC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="온도를 입력하세요"/>
+
+        <Button
+            android:id="@+id/btFtoC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="button2Method"
+            android:text="섭씨 계산" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
